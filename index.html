@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Random Numbers</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        let output = "";
+        let count = 5;
+        while (count > 0) {
+            let randomNumber = Math.floor(Math.random() * 100);
+            output += randomNumber + "<br>";
+            count--;
+        }
+        document.getElementById("output").innerHTML = output;
+    </script>
+</body>
+</html>
